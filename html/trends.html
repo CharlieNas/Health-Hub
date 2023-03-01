@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Health Hub</title>
+
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+  <script src="../js/line.js"></script>
+
+  <style>
+    canvas {
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="main full">
+
+    <div class="sidebar">
+      <span class="material-symbols-outlined logo">body_system</span>
+      <a href="index.html" class="button">
+        <span class="material-symbols-outlined icon">home</span>
+        <p>Home</p>
+      </a>
+      <a href="trends.html" class="button">
+        <span class="material-symbols-outlined icon">chart_data</span>
+        <p>Weight</p>
+      </a>
+      <a href="alarm.html" class="button">
+        <span class="material-symbols-outlined icon">alarm</span>
+        <p>Alarm</p>
+      </a>
+      <a href="bmi.html" class="button" id="bmi_butt">
+        <span class="material-symbols-outlined icon">monitor_weight</span>
+        <p>BMI</p>
+      </a>
+      </nav>
+    </div>
+
+
+    <div class="header">
+      <h2>Weight</h2>
+
+
+      <select name="selector" id="selector">
+        <option class="weekly" value="weekly">weekly</option>
+        <option class="monthly" value="monthly">monthly</option>
+        <option class="all" value="all" selected>all</option>
+      </select>
+
+
+      <div class="chartContainer">
+        <canvas id="lineChart" class="chart"></canvas>
+      </div>
+      <button id="trigger_alarm" class="set_button">Log</button> 
+    </div>
+  </div>
+</body>
+
+</html>

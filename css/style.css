@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+@import url('https://fonts.cdnfonts.com/css/cascadia-code');
+
+.weekly{
+  width: 15px;
+}
+
+.weekly_text{
+  font-size: 20px;
+}
+
+.monthly{
+  width: 15px;
+}
+
+.monthly_text{
+  font-size: 20px;
+}
+
+.button {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 300;
+  background: linear-gradient(-45deg, #041B2D,#554E9A,#428cd4, #ff9cda,#ea4492);
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+label {
+  font-size: 20px;
+}
+
+button{
+  width: 100px;
+  height: 50px;
+  top: 100px;
+  right: 400px;
+}
+
+input,
+label {
+    width: 150px;
+    height: 50px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 1;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.header {
+  text-align: center;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  color: #fff;
+  padding: 1rem;
+  width: 100%;
+}
+
+.header h1 {
+  margin-bottom: 30px;
+}
+
+.header h2 {
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.subheader {
+  text-align: center;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  color: #392761;
+  padding: 1rem;
+  width: 100%;
+}
+
+.bg-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  opacity: 0.5;
+  flex-shrink: 0;
+  animation: gradient 2s ease infinite;
+  border-radius: 0px;
+  background: linear-gradient(145deg, #392761, #432e74);
+  box-shadow:  5px 5px 10px #3e2b6b,
+             -5px -5px 10px #402b6d;
+}
+
+.sidebar a{
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  border: 0.16em solid rgba(255, 255, 255, 0);
+  border-radius: 2em;
+}
+
+.sidebar img{
+  margin-top: 5%;
+  opacity: 100%;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  border: 0.16em solid rgba(255, 255, 255, 0);
+}
+
+.sidebar a:hover {
+  color: #ffffff;
+  opacity: 60%;
+}
+
+.icon {
+  display: inline-block;
+  margin-top: 23px;
+  margin-right: 10px;
+  margin-left: 30px;
+}
+
+.full {
+  width: 100%;
+  height: 100%;
+}
+
+.chart {
+  height: 200px;
+  width: 300px;
+  max-height: 70%;
+  max-width: 70%
+}
+
+.chartContainer {
+  display: flex;
+  justify-content: space-around;
+  width:100%;
+}
+
+canvas {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 5px;
+}
+
+.logo {
+  display: inline-block;
+  margin-top: 45px;
+  margin-right: 10px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  transition: all 0.2s;
+  color: #ffffff;
+  font-size: 120px !important;
+}
+
+.wave1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave1 svg {
+    position: relative;
+    display: block;
+    width: calc(120% + 1.3px);
+    height: 450px;
+}
+
+.wave1 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.wave2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave2 svg {
+    position: relative;
+    display: block;
+    width: calc(120% + 1.3px);
+    height: 300px;
+}
+
+.wave2 .shape-fill {
+    fill: #392766;
+}
+
+.set_button {
+  margin: 10px;
+  padding: 15px 15px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  border: 0px;
+  opacity: 0.80;
+  font-weight: 700;
+  background-color: #554E9A;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.set_button:hover {
+  background-position: right center;
+  color: #ff9cda;
+  text-decoration: none;
+}
+
+.set_button:active {
+  transform: scale(0.95);
+}
+
+.info {
+  text-align: center;
+  font-size: 30px;
+  align-items: center;
+  margin-top: 420px;
+  display: flex;
+  margin: 0 -10px;
+  padding: 10px;
+  justify-content: space-evenly;
+}
+
+.box {
+  font-family: 'Cascadia Code', sans-serif;
+  font-size: 16;
+  background-color: rgba(255,255,255,0.5);
+  border-radius:10px;
+  color: #392761;
+  margin: 0 10px;
+  width: 27%;
+  padding: 0 10px;
+}
+
+span:hover a{
+  background: #282828;
+  color: white;
+}
+
+span:hover{
+  color: white;
+}
+
+.bmi_form {
+  margin: 10em;
+  background-color: rgba(255,255,255,0.5);
+  border-radius:10px;
+  padding: 4.5em;
+}
+
+
+.box h3 {
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+.box h4 {
+  font-size: 15px;
+}
+
+.form_text {
+  padding: 1em;
+  margin: 0.3em;
+}
+
+.form_box {
+  margin: 0.3em;
+}
+
+.bmi_form {
+  margin: 17em;
+  padding: 2em;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  text-align: center;
+  border-radius: 30px;
+  padding: 1em;
+  margin-top: 20em;
+  margin-right: 15em;
+  margin-left: 60em;
+  background-color: rgba(255,255,255,0.5);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(255,255,255,0);
+
+}
+
+.fade-in-image {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

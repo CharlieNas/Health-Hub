@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Health Hub</title>
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+  <script src="../js/bmi.js"></script>
+
+</head>
+
+<body>
+  <div class="main full">
+    <div class="sidebar">
+      <span class="material-symbols-outlined logo">body_system</span>
+      <a href="index.html" class="button">
+        <span class="material-symbols-outlined icon">home</span>
+        <p>Home</p>
+      </a>
+      <a href="trends.html" class="button">
+        <span class="material-symbols-outlined icon">chart_data</span>
+        <p>Weight</p>
+      </a>
+      <a href="alarm.html" class="button">
+        <span class="material-symbols-outlined icon">alarm</span>
+        <p>Alarm</p>
+      </a>
+      <a href="bmi.html" class="button" id="bmi_butt">
+        <span class="material-symbols-outlined icon">monitor_weight</span>
+        <p id="bmi_text">BMI</p>
+      </a>
+      </nav>
+    </div>
+
+
+    <div class="container1">
+
+      <div class="bmi_form">
+        <label for="height" class="form_text">Height (m):</label><br>
+        <input type="number" id="height" class="form_box" name="height"><br>
+        <button id="bmi_button" class="set_button" value="Click">Submit</button>
+      </div>
+
+    <div class="fade-in-image">
+      <div id="helloModal" class="modal">
+        <!-- modal content -->
+        <div class="modal-content">
+          <h1 id="bmi_heading">BMI:</h1>
+          <h2 id="bmi"></h2>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
