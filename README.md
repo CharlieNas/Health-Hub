@@ -10,3 +10,6 @@ This is my Brishack 2023 team project. Uses JS, HTML, CSS, Python to create a he
 - Set an alarm for when you want to weigh yourself
 - Calculate your BMI
 
+❗Weighing Scale required to perform any features
+
+📹 Video Demo may be added in the future 
