@@ -12,4 +12,5 @@ This is my Brishack 2023 team project. Uses JS, HTML, CSS, Python to create a he
 
 ❗Weighing Scale required to perform any features
 
-📹 Video Demo may be added in the future 
+📸 Example ScreenShot
+![health hub weight](https://user-images.githubusercontent.com/40807285/222525227-2f3883de-ea20-4b1b-a8a6-fd622deab310.png)
