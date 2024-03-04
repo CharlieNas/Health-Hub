@@ -4,12 +4,12 @@ Hackathon Project - Brishack 2023
 ## About
 Created a Health-focused web app to fit the theme of "Utopia"
 
-## Back End
-Weight data taken from bluetooth scales and stored alongside time of reading
-Reverse engineered Python script used sockets to get input
-##Front End
-Implemented Graphing, Alarm and Design features
-Used JavaScript, HTML and CSS assisted by Replit web app developer
+Back End
+- Weight data taken from bluetooth scales and stored alongside time of reading
+- Reverse engineered Python script used sockets to get input
+Front End
+- Implemented Graphing, Alarm and Design features
+- Used JavaScript, HTML and CSS assisted by Replit web app developer
 
 ## Features
 - Connects via bluetooth to weighing scale
